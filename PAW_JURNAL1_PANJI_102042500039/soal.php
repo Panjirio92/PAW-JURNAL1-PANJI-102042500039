@@ -217,19 +217,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="form-group">
                 <label>Nama Lengkap <span class="required">*</span></label>
-                <input type="text" name="nama_lengkap" placeholder="Contoh: Budi Santoso" value="<?php echo htmlspecialchars($nama); ?>">
+                <input type="text" name="nama_lengkap" placeholder="Contoh: Budi Santoso" value="<?php echo $nama; ?>">
                 <span class="error"><?php echo $namaErr ? "* $namaErr" : ""; ?></span>
             </div>
 
             <div class="form-group">
                 <label>Nomor WhatsApp <span class="required">*</span></label>
-                <input type="number" name="no_whatsapp" placeholder="Contoh: 081234567890" value="<?php echo htmlspecialchars($whatsapp); ?>">
+                <input type="number" name="no_whatsapp" placeholder="Contoh: 081234567890" value="<?php echo $whatsapp; ?>">
                 <span class="error"><?php echo $waErr ? "* $waErr" : ""; ?></span>
             </div>
 
             <div class="form-group">
                 <label>Email Institusi <span class="required">*</span></label>
-                <input type="email" name="email_institusi" placeholder="Contoh: budi@university.ac.id" value="<?php echo htmlspecialchars($email); ?>">
+                <input type="email" name="email_institusi" placeholder="Contoh: budi@university.ac.id" value="<?php echo $email; ?>">
                 <span class="error"><?php echo $emailErr ? "* $emailErr" : ""; ?></span>
             </div>
 
